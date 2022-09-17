@@ -1,4 +1,10 @@
 export const GET_ERRORS = "GET_ERRORS";
 export const USER_LOADING = "USER_LOADING";
 export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const GET_USER = "GET_USER";
 export const GET_API = "GET_API";
+export const SET_GUESS_LOADING = 'SET_GUESS_LOADING';
+export const GET_RECORDS = 'GET_RECORDS';
+export const ADD_RECORD = 'ADD_RECORD';
+export const SET_RECORDS = 'SET_RECORDS';
+export const GET_BTC_USD = 'GET_BTC_USD';

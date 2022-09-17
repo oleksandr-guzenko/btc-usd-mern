@@ -81,7 +81,10 @@ router.post("/login", (req, res) => {
         const payload = {
           id: user.id,
           name: user.name,
-          email: user.email
+          email: user.email,
+          score: user.score,
+          active: user.active,
+          records: user.records
         };
 
         // Sign token
@@ -105,6 +108,14 @@ router.post("/login", (req, res) => {
       }
     });
   });
+});
+
+router.get('/user', passport.authenticate('jwt', {session: false}), (req, res) => {
+  User
+    .findById(req.user._id, { password: 0 })
+    .populate('records')
+    .then(user => res.json(user))
+    .catch(err => console.log(err));
 });
 
 module.exports = router;
