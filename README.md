@@ -1,7 +1,6 @@
 # mern-auth
 
-![Final App](https://i.postimg.cc/tybZb8dL/final-MERNAuth.gif)
-Minimal full-stack MERN app with authentication using passport and JWTs.
+Minimal guessing project if BTC to USD will rise or fall using MERN.
 
 This project uses the following technologies:
 
@@ -16,15 +15,10 @@ This project uses the following technologies:
 - [Build a Login/Auth App with the MERN Stack — Part 2 (Frontend & Redux Setup)](https://blog.bitsrc.io/build-a-login-auth-app-with-mern-stack-part-2-frontend-6eac4e38ee82)
 - [Build a Login/Auth App with the MERN Stack — Part 3 (Linking Redux with React Components)](https://blog.bitsrc.io/build-a-login-auth-app-with-the-mern-stack-part-3-react-components-88190f8db718)
 
-## Configuration
+##Configuration
 
-Make sure to add your own `MONGOURI` from your [mLab](http://mlab.com) database in `config/keys.js`.
-
-```javascript
-module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
-  secretOrKey: "secret"
-};
+```API to get latest BTC to USD
+  https://api.coinbase.com/v2/prices/BTC-USD/spot
 ```
 
 ## Quick Start
